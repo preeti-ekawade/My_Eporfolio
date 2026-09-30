@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Preeti Ekawade — Geospatial Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700;800&family=IBM+Plex+Mono:wght@400;500&family=Homemade+Apple&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- RIGHT-SIDE ARCHIVE NAV (labels/ids editable) -->
+<div class="progress" id="progress" aria-hidden="true"></div>
+<nav class="rail" id="rail" aria-label="Sections"></nav>
+
+<main>
+<!-- ABOUT → METADATA -->
+<section id="metadata" class="meta">
+  <div class="meta-band"></div>
+  <figure class="polaroid reveal zoom">
+    <div class="photo"><img src="images/profile.jpg" alt="Portrait" onerror="this.remove()"></div>
+    <figcaption>01 — metadata</figcaption>
+  </figure>
+  <div class="meta-info" data-stagger="from-right">
+    <dl><dt>Name</dt><dd>Preeti Ekawade</dd></dl>
+    <dl><dt>Field</dt><dd>Geoinformatics / GIS</dd></dl>
+    <dl><dt>Location</dt><dd>Pune, India</dd></dl>
+    <dl><dt>Currently</dt><dd>M.Sc. Geoinformatics</dd></dl>
+    <dl class="wide"><dt>Interests</dt><dd>GIS • Remote Sensing • Cartography • Spatial Analysis</dd></dl>
+  </div>
+</section>
+
+<!-- LEARNING JOURNEY → THE ROUTE SO FAR -->
+<section id="route" class="route">
+  <h2>The Route So Far</h2>
+  <div class="board">
+    <div class="map-wrap reveal zoom">
+      <div id="routeMap" role="img" aria-label="Map showing Margao, Goa (B.Sc.) and Pune, Maharashtra (M.Sc.)"></div>
+      <div class="pin-end">2027 →</div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="skills">
+  <div class="paper reveal from-left">
+    <h2>Core Skills</h2>
+    <ul data-stagger="from-left"><li>Analytical Thinking</li><li>Teamwork and Leadership</li><li>Learning Agility</li></ul>
+  </div>
+  <div class="tools reveal from-right">
+    <h2>Languages &amp; Tools</h2>
+    <div class="tiles" data-stagger="zoom">
+      <b>Qgis<small>QGIS</small></b><b>Ar<small>ArcGIS Pro</small></b><b>GEE<small>Google Earth Engine</small></b><b>Co<small>Google Colab</small></b><b>Py<small>Python — Intermediate</small></b>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE → INTERACTIVE CIRCULAR CAREER ARCHIVE -->
+<section id="timeline" class="tl experience-constellation">
+  <div class="constellation" id="exp" aria-label="Interactive professional experience archive">
+    <button class="x-back" id="xBack" type="button">← BACK TO EXPERIENCE</button>
+    <div class="orbit-halo orbit-halo-a"></div>
+    <div class="orbit-halo orbit-halo-b"></div>
+    <div class="orbit-lines" aria-hidden="true">
+      <span></span><span></span><span></span><span></span>
+    </div>
+
+    <div class="constellation-core" aria-hidden="true">
+      <span>EXPERIENCE</span>
+      <em>MY PROFESSIONAL JOURNEY</em>
+    </div>
+
+    <ol class="orbit-nodes" id="tlList"></ol>
+    <svg class="x-svg" id="xSvg" aria-hidden="true"></svg>
+    <div class="x-arch" id="xArch"></div>
+
+    <div class="orbit-instruction" id="orbitInstruction">HOVER TO EXPLORE · CLICK TO UNFOLD</div>
+  </div>
+</section>
+
+<!-- PROJECTS → THE ARCHIVE -->
+<section id="archive" class="archive">
+  <h2>The Archive</h2>
+  <p class="lede reveal">Maps, remote-sensing visualizations and Earth Engine work. Drag, swipe or use the arrows.</p>
+  <div class="stage reveal zoom" id="stage"></div>
+  <div class="stage-info" id="stageInfo"></div>
+  <div class="arrows reveal"><button id="prev" aria-label="Previous">←</button><button id="next" aria-label="Next">→</button></div>
+
+  <h2 class="sub">Major Projects</h2>
+  <div class="major reveal zoom">
+    <div class="ring-wrap"><div class="ring" id="ring" aria-label="Drag to rotate"></div><div class="hub">drag<br>to rotate</div></div>
+    <div class="panel" id="panel" aria-live="polite"></div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certs" class="certs">
+  <h2>Certifications</h2>
+  <ul id="certList"></ul>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <p class="coords reveal">End of route</p>
+  <h2>Get in Touch</h2>
+  <div class="links" data-stagger="">
+    <a href="mailto:your@email.com">Email — your@email.com</a>
+    <a href="#">LinkedIn — add link</a>
+    <a href="#">GitHub — add link</a>
+  </div>
+</section>
+</main>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
