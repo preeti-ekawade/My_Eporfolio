@@ -28,7 +28,8 @@
     <dl><dt>Field</dt><dd>Geoinformatics / GIS</dd></dl>
     <dl><dt>Location</dt><dd>Pune, India</dd></dl>
     <dl><dt>Currently</dt><dd>M.Sc. Geoinformatics</dd></dl>
-    <dl class="wide"><dt>Interests</dt><dd>GIS • Remote Sensing • Cartography • Spatial Analysis</dd></dl>
+    <dl class="wide"><dt>Interests</dt><dd>GIS • Remote Sensing • Spatial Analysis</dd></dl>
+    <p class="meta-bio">Hello, I’m a Geoinformatics student with expertise in GIS, remote sensing, and geospatial analytics. I work with ArcGIS, QGIS, Python, and Google Earth Engine, and have a strong interest in GeoAI and data-driven decision-making.</p>
   </div>
 </section>
 
@@ -37,7 +38,28 @@
   <h2>The Route So Far</h2>
   <div class="board">
     <div class="map-wrap reveal zoom">
-      <div id="routeMap" role="img" aria-label="Map showing Margao, Goa (B.Sc.) and Pune, Maharashtra (M.Sc.)"></div>
+      <div id="routeMap" role="img" aria-label="Map showing Margao, Goa (B.Sc.) and Pune, Maharashtra (M.Sc.)">
+        <div class="route-map-fallback" aria-hidden="true">
+          <svg viewBox="0 0 1200 650" preserveAspectRatio="xMidYMid slice">
+            <defs>
+              <pattern id="mapGrid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#7d9b88" stroke-width="1" opacity=".3"/></pattern>
+              <linearGradient id="mapLand" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e7ece2"/><stop offset="1" stop-color="#d5e0d5"/></linearGradient>
+            </defs>
+            <rect width="1200" height="650" fill="url(#mapLand)"/><rect width="1200" height="650" fill="url(#mapGrid)"/>
+            <g fill="none" stroke="#8ca895" stroke-width="2" opacity=".62">
+              <path d="M-30 90C140 10 220 190 380 110S620 10 760 100 1030 190 1240 70"/><path d="M-30 120C140 40 220 220 380 140S620 40 760 130 1030 220 1240 100"/>
+              <path d="M-40 500C140 410 250 580 430 480S690 420 820 500 1080 580 1240 470"/><path d="M-40 530C140 440 250 610 430 510S690 450 820 530 1080 610 1240 500"/>
+              <path d="M130 -20C190 110 110 220 190 330S300 510 240 680"/><path d="M160 -20C220 110 140 220 220 330S330 510 270 680"/>
+              <path d="M890 -20C820 120 960 240 880 350S810 540 900 680"/><path d="M930 -20C860 120 1000 240 920 350S850 540 940 680"/>
+            </g>
+            <g fill="none" stroke="#c2502e" stroke-width="5" stroke-linecap="round" stroke-dasharray="4 12"><path d="M360 500Q520 430 615 320T870 145"/></g>
+            <g transform="translate(360 500)"><circle r="30" fill="#c2502e" opacity=".14"/><circle r="17" fill="#c2502e" stroke="#fff" stroke-width="5"/><text x="0" y="-42" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="25" fill="#1d3027">MARGAO, GOA</text><text x="0" y="60" text-anchor="middle" font-family="monospace" font-size="16" fill="#53695a">B.Sc. · 2022–2025</text></g>
+            <g transform="translate(870 145)"><circle r="30" fill="#c2502e" opacity=".14"/><circle r="17" fill="#c2502e" stroke="#fff" stroke-width="5"/><text x="0" y="-42" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="25" fill="#1d3027">PUNE, MAHARASHTRA</text><text x="0" y="60" text-anchor="middle" font-family="monospace" font-size="16" fill="#53695a">M.Sc. Geoinformatics · 2025–2027</text></g>
+            <text x="40" y="55" font-family="monospace" font-size="14" letter-spacing="3" fill="#53695a">ACADEMIC ROUTE / INDIA</text>
+            <text x="1160" y="615" text-anchor="end" font-family="monospace" font-size="13" fill="#53695a">ILLUSTRATIVE SPATIAL OVERVIEW</text>
+          </svg>
+        </div>
+      </div>
       <div class="pin-end">2027 →</div>
     </div>
   </div>
@@ -57,27 +79,40 @@
   </div>
 </section>
 
-<!-- EXPERIENCE → INTERACTIVE CIRCULAR CAREER ARCHIVE -->
-<section id="timeline" class="tl experience-constellation">
-  <div class="constellation" id="exp" aria-label="Interactive professional experience archive">
-    <button class="x-back" id="xBack" type="button">← BACK TO EXPERIENCE</button>
-    <div class="orbit-halo orbit-halo-a"></div>
-    <div class="orbit-halo orbit-halo-b"></div>
-    <div class="orbit-lines" aria-hidden="true">
-      <span></span><span></span><span></span><span></span>
-    </div>
-
-    <div class="constellation-core" aria-hidden="true">
-      <span>EXPERIENCE</span>
-      <em>MY PROFESSIONAL JOURNEY</em>
-    </div>
-
-    <ol class="orbit-nodes" id="tlList"></ol>
-    <svg class="x-svg" id="xSvg" aria-hidden="true"></svg>
-    <div class="x-arch" id="xArch"></div>
-
-    <div class="orbit-instruction" id="orbitInstruction">HOVER TO EXPLORE · CLICK TO UNFOLD</div>
+<!-- EXPERIENCE — SKETCHBOOK ARCHIVE -->
+<section id="timeline" class="experience-section">
+  <div class="experience-heading">
+    <p class="coords">03 / EXPERIENCE · FIELD JOURNAL</p>
+    <h2>Experience, <span>in the field.</span></h2>
+    <p class="experience-intro">Select an entry to open its sketchbook: notes, field photographs and certificates.</p>
   </div>
+  <div class="experience-index" id="experienceIndex" aria-label="Experience entries"></div>
+  <div class="experience-book-wrap" id="experienceBookWrap" hidden>
+    <div class="sketchbook" id="experienceBook" aria-live="polite">
+      <div class="sketchbook-spine" aria-hidden="true"></div>
+      <div class="sketch-page sketch-page-left">
+        <div class="page-meta"><span>FIELD JOURNAL / <b id="bookNumber">01</b></span><span id="bookDateLeft"></span></div>
+        <div class="sketch-art" aria-hidden="true">
+          <svg viewBox="0 0 440 220" role="presentation"><path d="M15 42 C80 4 112 10 156 50 S240 104 287 58 S360 16 425 42"/><path d="M15 62 C80 24 112 30 156 70 S240 124 287 78 S360 36 425 62"/><path d="M15 82 C80 44 112 50 156 90 S240 144 287 98 S360 56 425 82"/><path d="M15 102 C80 64 112 70 156 110 S240 164 287 118 S360 76 425 102"/><path d="M15 122 C80 84 112 90 156 130 S240 184 287 138 S360 96 425 122"/><path d="M15 142 C80 104 112 110 156 150 S240 204 287 158 S360 116 425 142"/><circle cx="220" cy="112" r="31"/><circle cx="220" cy="112" r="21"/><path d="M190 112 H250 M220 82 V142"/><path class="route-line" d="M28 185 C104 170 120 145 170 157 S245 196 285 167 S365 150 410 176"/></svg>
+        </div>
+        <p class="page-kicker">A STUDY IN SPACE</p>
+        <h3 id="bookLeftTitle">Working with geospatial data</h3>
+        <p class="book-left-note" id="bookLeftNote">Field observations, spatial analysis and a record of work in progress.</p>
+        <div class="page-bottom"><span>PREETI EKWade / GEOSPATIAL PORTFOLIO</span><span id="bookPageLeft">01</span></div>
+      </div>
+      <div class="sketch-page sketch-page-right">
+        <div class="page-meta"><span id="bookOrgShort">EXPERIENCE NOTE</span><span id="bookPageRight">02 / 08</span></div>
+        <p class="page-kicker">EXPERIENCE / REFLECTION</p>
+        <h3 id="bookTitle">EarthSight Foundation</h3>
+        <p class="book-role" id="bookRole"></p>
+        <ul class="experience-points" id="bookPoints"></ul>
+        <div class="book-media" id="bookMedia"></div>
+        <div class="page-bottom"><button type="button" class="book-nav" id="bookPrev">← PREVIOUS</button><span id="bookCounter">01 / 04</span><button type="button" class="book-nav" id="bookNext">NEXT →</button></div>
+      </div>
+    </div>
+    <button type="button" class="book-close" id="bookClose">× CLOSE SKETCHBOOK</button>
+  </div>
+  <div class="experience-footnote"><span class="drawn-rule"></span><span>FOUR ENTRIES · A CONTINUOUS LEARNING JOURNEY</span></div>
 </section>
 
 <!-- PROJECTS → THE ARCHIVE -->
@@ -88,27 +123,70 @@
   <div class="stage-info" id="stageInfo"></div>
   <div class="arrows reveal"><button id="prev" aria-label="Previous">←</button><button id="next" aria-label="Next">→</button></div>
 
-  <h2 class="sub">Major Projects</h2>
-  <div class="major reveal zoom">
-    <div class="ring-wrap"><div class="ring" id="ring" aria-label="Drag to rotate"></div><div class="hub">drag<br>to rotate</div></div>
-    <div class="panel" id="panel" aria-live="polite"></div>
-  </div>
 </section>
 
-<!-- CERTIFICATIONS -->
-<section id="certs" class="certs">
-  <h2>Certifications</h2>
-  <ul id="certList"></ul>
+<!-- SEMESTER REFLECTIONS → THE SPATIAL FIELD JOURNAL -->
+<section id="reflections" class="reflections">
+  <div class="reflection-heading reveal">
+    <p class="reflection-kicker">04 / LEARNING JOURNAL</p>
+    <h2>Field Notes: <span>A Semester of Learning</span></h2>
+    <p class="reflection-lede">Four subjects. Four perspectives. One evolving understanding of geospatial science.</p>
+  </div>
+
+  <div class="book-shell reveal" aria-label="Interactive book of semester reflections">
+    <div class="book-map-texture" aria-hidden="true"></div>
+    <div class="book-spine" aria-hidden="true"></div>
+    <div class="book-spread" id="reflectionBook">
+      <aside class="book-left-page">
+        <p class="book-overline">FIELD NOTES / 2026</p>
+        <div class="book-contour-art" aria-hidden="true">
+          <svg viewBox="0 0 360 300" role="presentation">
+            <g class="contours" fill="none" stroke="currentColor" stroke-width="1.2">
+              <path d="M-10 65 C45 8 95 16 132 53 S210 110 257 65 S330 12 375 45"/><path d="M-10 82 C43 28 91 33 127 67 S210 127 259 82 S329 31 375 62"/><path d="M-10 102 C40 50 89 54 122 84 S208 145 261 101 S329 52 375 80"/><path d="M-10 124 C37 75 83 74 117 101 S207 164 263 122 S330 73 375 102"/><path d="M-10 146 C35 99 79 96 112 120 S205 183 265 144 S332 94 375 124"/><path d="M-10 169 C31 124 74 117 107 139 S203 203 267 165 S332 116 375 146"/><path d="M-10 192 C27 149 69 139 102 159 S201 223 269 187 S334 139 375 169"/>
+              <path d="M60 310 C76 255 100 230 140 221 S210 228 228 192 S250 140 290 132 S341 145 375 126" stroke="#c2502e"/>
+              <path d="M73 310 C88 260 111 241 145 234 S207 237 221 202 S247 157 287 149 S337 158 375 142" stroke="#c2502e"/>
+            </g>
+            <g stroke="#4f6f5b" fill="none" stroke-width="1.5"><path d="M177 35 L177 255" stroke-dasharray="4 5"/><circle cx="177" cy="145" r="7"/><circle cx="177" cy="145" r="18"/><circle cx="177" cy="145" r="30"/></g>
+            <g fill="#25392f" font-family="IBM Plex Mono, monospace" font-size="10"><text x="190" y="140">FIELD</text><text x="190" y="153">POINT 04</text></g>
+          </svg>
+        </div>
+        <div class="book-left-copy">
+          <span class="book-chapter-label">A STUDY IN SPACE</span>
+          <h3 id="reflectionBookLeftTitle">Learning to read the Earth</h3>
+          <p id="reflectionBookLeftText">Notes on the tools, data, and spatial questions that shaped my semester.</p>
+        </div>
+        <div class="book-coordinate">18°31′N&nbsp; 73°51′E <span>•</span> SPATIAL JOURNAL</div>
+      </aside>
+      <article class="book-right-page" id="reflectionBookPage" aria-live="polite" aria-atomic="true">
+        <div class="book-page-top"><span id="reflectionBookPageNumber">01 / 04</span><span id="reflectionBookPageCategory">REMOTE SENSING</span></div>
+        <p class="book-eyebrow" id="bookEyebrow">SUBJECT REFLECTION</p>
+        <h3 id="reflectionBookSubject">Advanced Remote Sensing</h3>
+        <p class="book-subtitle" id="reflectionBookSubtitle">Beyond the Visible</p>
+        <div class="book-tags" id="reflectionBookTags"><span>MICROWAVE</span><span>SAR</span><span>LiDAR</span><span>HYPERSPECTRAL</span></div>
+        <div class="book-rule"><span></span><span></span><span></span></div>
+        <p class="book-reflection" id="reflectionBookReflection">This subject helped me understand advanced remote sensing techniques, including microwave remote sensing, SAR, LiDAR, and hyperspectral imaging. I learned how radar signals interact with different surface features and how LiDAR and hyperspectral data are used to study vegetation, terrain, and environmental conditions. The introduction to SAR data processing using ESA SNAP helped me connect theoretical concepts with practical applications. This subject improved my understanding of satellite data and its role in agricultural and environmental monitoring.</p>
+        <div class="book-key"><span>KEY LEARNING</span><em id="reflectionBookKeyLearning">Understanding how different remote sensing technologies help us study the Earth's surface.</em></div>
+        <div class="book-page-footer"><span>PREETI EKAWADE / LEARNING JOURNAL</span><span id="reflectionBookPageFooter">01</span></div>
+      </article>
+    </div>
+    <div class="book-controls">
+      <button class="book-nav book-prev" id="reflectionBookPrev" type="button" aria-label="Previous subject" disabled><span aria-hidden="true">←</span> PREVIOUS</button>
+      <div class="book-progress" aria-label="Page progress"><span class="book-progress-track"><span id="reflectionBookProgressFill"></span></span><span id="reflectionBookProgressText">01 — 04</span></div>
+      <button class="book-nav book-next" id="reflectionBookNext" type="button" aria-label="Next subject">NEXT <span aria-hidden="true">→</span></button>
+    </div>
+  </div>
+  <p class="reflection-footnote reveal"><span>FIELD NOTE</span> Learning to connect data, technology, and the places they help us understand.</p>
 </section>
+
 
 <!-- CONTACT -->
 <section id="contact" class="contact">
   <p class="coords reveal">End of route</p>
   <h2>Get in Touch</h2>
   <div class="links" data-stagger="">
-    <a href="mailto:your@email.com">Email — your@email.com</a>
-    <a href="#">LinkedIn — add link</a>
-    <a href="#">GitHub — add link</a>
+    <a href="mailto:preetiekawade@gmail.com">Email — preetiekawade@gmail.com</a>
+    <a href="https://www.linkedin.com/in/preeti-e-897907259/?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" rel="noopener noreferrer">LinkedIn — Preeti Ekawade ↗</a>
+    <a href="https://github.com/preeti-ekawade" target="_blank" rel="noopener noreferrer">GitHub — preeti-ekawade ↗</a>
   </div>
 </section>
 </main>
