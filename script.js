@@ -11,80 +11,80 @@ const sections = [ // right-side navigation
 const projects = [
   { type: "ArcGIS Dashboard", title: "Campus Tree Dashboard",
     description: "An interactive ArcGIS dashboard visualizing tree health, height, species distribution, and biodiversity observations across 22 campus zones to support urban forestry management.",
-    thumb: { src: "assets/archive-thumbs/campus-tree-dashboard.png", cap: "Campus Tree Dashboard thumbnail" },
+    thumb: { src: "./campus-tree-dashboard.png", cap: "Campus Tree Dashboard thumbnail" },
     images: [],
     links: [{ label: "View Dashboard", url: "https://www.arcgis.com/apps/dashboards/6588f5e2ae86443fbc5f6bf67f228234" }] },
   { type: "ArcGIS StoryMap", title: "Fading Colours of India’s Underwater Gardens",
     description: "An ArcGIS StoryMap exploring India’s major coral reef regions, bleaching hotspots, environmental stressors, and conservation efforts through geospatial mapping and visual storytelling.",
-    thumb: { src: "assets/archive-thumbs/coral-reef-storymap.png", cap: "Fading Colours of India’s Underwater Gardens thumbnail" },
+    thumb: { src: "./coral-reef-storymap.png", cap: "Fading Colours of India’s Underwater Gardens thumbnail" },
     images: [],
     links: [{ label: "View StoryMap", url: "https://storymaps.arcgis.com/stories/431844aef0834a36ade4ae0c9df240d1" }] },
   { type: "Web Portal", title: "Comparative Vegetation Analysis: MODIS, Landsat 9 & Sentinel-2",
     description: "An interactive web portal comparing vegetation across three Goa talukas using MODIS NDVI, Landsat 9, and Sentinel-2 imagery to demonstrate differences in spatial resolution and applications.",
     tags: ["MODIS NDVI", "Landsat 9", "Sentinel-2"],
-    thumb: { src: "assets/archive-thumbs/vegetation-analysis.png", cap: "Comparative vegetation analysis thumbnail" },
+    thumb: { src: "./vegetation-analysis.png", cap: "Comparative vegetation analysis thumbnail" },
     images: [],
     links: [{ label: "View Website", url: "https://preeti-ekawade.github.io/COMPARITIVE-VEGETATION-ANALYSIS/" }] },
   { type: "Google Earth Engine App", title: "NAPA Forest Fire Analysis",
     description: "An interactive Google Earth Engine dashboard assessing forest fire severity and vegetation recovery using Sentinel-2 imagery, NBR, dNBR, and NDVI.",
     tags: ["Sentinel-2", "NBR", "dNBR", "NDVI"],
-    thumb: { src: "assets/archive-thumbs/napa-forest-fire.png", cap: "NAPA Forest Fire Analysis thumbnail" },
+    thumb: { src: "./napa-forest-fire.png", cap: "NAPA Forest Fire Analysis thumbnail" },
     images: [],
     links: [{ label: "View Dashboard", url: "https://preeti-ee.projects.earthengine.app/view/napaforestfire" }] },
   { type: "Google Earth Engine App", title: "Assam Flood Mapping and Classification – 2022",
     description: "A flood mapping analysis using Sentinel-1 SAR and CHIRPS rainfall data to identify flooded areas, compare flood periods, and visualize spatial flood patterns.",
     tags: ["Sentinel-1 SAR", "CHIRPS"],
-    thumb: { src: "assets/archive-thumbs/assam-flood-2022.png", cap: "Assam Flood Mapping thumbnail" },
+    thumb: { src: "./assam-flood-2022.png", cap: "Assam Flood Mapping thumbnail" },
     images: [],
     links: [{ label: "View Map", url: "https://preeti-ee.projects.earthengine.app/view/flood-mapping-of-assam-2022" }] },
   { type: "Web Application", title: "Crop Type Mapping – Shahbad, Haryana",
     description: "A multi-temporal Sentinel-1 SAR and Random Forest classification project mapping paddy, sugarcane, other crops, and fallow/non-agricultural land during Kharif 2025, with accuracy assessment and interactive web publication.",
     tags: ["Sentinel-1 SAR", "Random Forest"],
-    thumb: { src: "assets/archive-thumbs/crop-type-mapping.png", cap: "Crop Type Mapping thumbnail" },
+    thumb: { src: "./crop-type-mapping.png", cap: "Crop Type Mapping thumbnail" },
     images: [],
     links: [{ label: "View Website", url: "https://preeti-ekawade.github.io/Crop-Type-Mapping/" }] },
   { type: "Land Use / Land Cover", title: "Spatial Analysis of Land Use/Land Cover Changes in Singapore",
     description: "A supervised classification study comparing LULC maps from 1990 and 2024 to visualize urban expansion, vegetation changes, and the transformation of natural landscapes.",
     tags: ["Supervised classification", "1990 vs 2024"],
-    thumb: { src: "assets/archive-thumbs/singapore-lulc.png", cap: "Singapore LULC thumbnail" },
-    images: [{ src: "images/archive/singapore-lulc-1990.jpg", cap: "Spatial distribution of LULC classes in Singapore (1990)" },
-             { src: "images/archive/singapore-lulc-2024.jpg", cap: "Spatial distribution of LULC classes in Singapore (2024)" }],
+    thumb: { src: "./singapore-lulc.png", cap: "Singapore LULC thumbnail" },
+    images: [{ src: "./singapore-lulc-1990.jpg", cap: "Spatial distribution of LULC classes in Singapore (1990)" },
+             { src: "./singapore-lulc-2024.jpg", cap: "Spatial distribution of LULC classes in Singapore (2024)" }],
     links: [] },
   { type: "ArcGIS ModelBuilder", title: "Drainage Network Analysis in Mandovi Basin Using ArcGIS ModelBuilder",
     description: "A GIS-based watershed analysis using stream order, drainage density, aspect, and contour mapping to examine drainage patterns and topographic characteristics of the Mandovi River Basin.",
     tags: ["Stream order", "Drainage density", "Aspect", "Contour"],
-    thumb: { src: "assets/archive-thumbs/mandovi-drainage.png", cap: "Mandovi Basin drainage thumbnail" },
-    images: [{ src: "images/archive/mandovi-stream-order.jpg", cap: "Strahler stream order network, Mandovi River Basin, Goa" },
-             { src: "images/archive/mandovi-watershed.jpg", cap: "Watershed delineation of Mandovi River Basin, Goa" },
-             { src: "images/archive/mandovi-stream-density.jpg", cap: "Spatial distribution of stream density, Mandovi River Basin" },
-             { src: "images/archive/mandovi-contour.jpg", cap: "Topographical contour representation, Mandovi River Basin" },
-             { src: "images/archive/mandovi-aspect.jpg", cap: "Terrain aspect classification, Mandovi River Basin, Goa" }],
+    thumb: { src: "./mandovi-drainage.png", cap: "Mandovi Basin drainage thumbnail" },
+    images: [{ src: "./mandovi-stream-order.jpg", cap: "Strahler stream order network, Mandovi River Basin, Goa" },
+             { src: "./mandovi-watershed.jpg", cap: "Watershed delineation of Mandovi River Basin, Goa" },
+             { src: "./mandovi-stream-density.jpg", cap: "Spatial distribution of stream density, Mandovi River Basin" },
+             { src: "./mandovi-contour.jpg", cap: "Topographical contour representation, Mandovi River Basin" },
+             { src: "./mandovi-aspect.jpg", cap: "Terrain aspect classification, Mandovi River Basin, Goa" }],
     links: [] },
   { type: "Python Remote Sensing", title: "Time-Series NDVI Animation for India",
     description: "A Python-based remote sensing project generating an NDVI animation to visualize seasonal and long-term vegetation changes across India using satellite imagery.",
     tags: ["Python", "NDVI", "Time series"],
-    thumb: { src: "assets/archive-thumbs/ndvi-animation.png", cap: "Time-Series NDVI Animation thumbnail" },
+    thumb: { src: "./ndvi-animation.png", cap: "Time-Series NDVI Animation thumbnail" },
     images: [],
     links: [] }, // PDF lists "Time Series Animation Gif" only as a relative link with no file attached — see delivery notes
   { type: "Python + Google Earth Engine", title: "Python-Based Spectral Index Analysis Using Google Earth Engine",
     description: "A Python and Google Earth Engine workflow developed in Google Colab to calculate and visualize NDVI, SAVI, NDWI, and NDBI through automated satellite image processing and spectral band mathematics.",
     tags: ["Google Colab", "NDVI", "SAVI", "NDWI", "NDBI"],
-    thumb: { src: "assets/archive-thumbs/spectral-index.png", cap: "Spectral Index Analysis thumbnail" },
-    images: [{ src: "images/archive/spectral-savi.jpg", cap: "Soil Adjusted Vegetation Index (SAVI), Bardez, Tiswadi & Mormugao Talukas, Goa" },
-             { src: "images/archive/spectral-ndbi.jpg", cap: "Normalized Difference Built-up Index (NDBI)" },
-             { src: "images/archive/spectral-ndvi.jpg", cap: "Normalized Difference Vegetation Index (NDVI)" },
-             { src: "images/archive/spectral-ndmi.jpg", cap: "Normalized Difference Moisture Index (NDMI)" },
-             { src: "images/archive/spectral-ndwi.jpg", cap: "Normalized Difference Water Index (NDWI)" }],
+    thumb: { src: "./spectral-index.png", cap: "Spectral Index Analysis thumbnail" },
+    images: [{ src: "./spectral-savi.jpg", cap: "Soil Adjusted Vegetation Index (SAVI), Bardez, Tiswadi & Mormugao Talukas, Goa" },
+             { src: "./spectral-ndbi.jpg", cap: "Normalized Difference Built-up Index (NDBI)" },
+             { src: "./spectral-ndvi.jpg", cap: "Normalized Difference Vegetation Index (NDVI)" },
+             { src: "./spectral-ndmi.jpg", cap: "Normalized Difference Moisture Index (NDMI)" },
+             { src: "./spectral-ndwi.jpg", cap: "Normalized Difference Water Index (NDWI)" }],
     links: [] }
 ];
 
 const majorProjects = [ // rotating ring
-  { title: "Care Around You: A Web GIS Project", image: "images/medical-facilities.jpg", tools: ["Web GIS", "Mapping"],
+  { title: "Care Around You: A Web GIS Project", image: "./medical-facilities.jpg", tools: ["Web GIS", "Mapping"],
     description: "Interactive WebGIS map of medical facilities around BVDU campus; helps users easily find nearby healthcare services.",
     link: "https://preeti-ekawade.github.io/Medical-Facilities-in-and-Arourd-BVDU/" },
-  { title: "Interactive Global Earthquake Explorer", image: "images/earthquake.jpg", tools: ["Python", "GeoPandas", "Plotly.js"],
+  { title: "Interactive Global Earthquake Explorer", image: "./earthquake.jpg", tools: ["Python", "GeoPandas", "Plotly.js"],
     description: "3D earthquake map analysing magnitude, depth and hotspots to identify major seismic zones and spatial patterns.", link: "#" },
-  { title: "Geospatial Assessment of Rural Villages", image: "images/rural.jpg", tools: ["3D model", "Field study"],
+  { title: "Geospatial Assessment of Rural Villages", image: "./rural.jpg", tools: ["3D model", "Field study"],
     description: "Study of Kondethar and Adharwadi villages, Maharashtra: rainfall vulnerability and flood risk with rooftop solar energy potential, for sustainable rural planning.", link: "#" }
 ];
 
@@ -98,7 +98,12 @@ const certifications = [
    ========================================================= */
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-const img = (src, alt) => `<img src="${esc(src)}" alt="${esc(alt)}" loading="lazy" onerror="this.remove()">`;
+const img = (src, alt) => {
+  const safeSrc = esc(src);
+  const fallbackSrc = esc(String(src).split("/").pop());
+  return `<img src="${safeSrc}" alt="${esc(alt)}" loading="lazy"
+    onerror="if(!this.dataset.fallbackTried){this.dataset.fallbackTried='1';this.src='./${fallbackSrc}';}else{this.hidden=true;this.alt='Image unavailable: ${esc(alt)}';}">`;
+};
 
 /* Nav rail + active marker */
 $("#rail").innerHTML = sections.map(([id, l]) => `<a href="#${id}" data-id="${id}">${l}</a>`).join("");
@@ -223,10 +228,10 @@ const swap = el => { el.classList.remove("swap"); void el.offsetWidth; el.classL
 
 /* Experience — clickable sketchbook archive */
 const experienceEntries = [
-  { org:"EarthSight Foundation", date:"May 2026 — Ongoing", short:"LANDSCAPE RESTORATION", title:"Reading change across the landscape", left:"A record of multi-temporal satellite analysis and landscape restoration mapping.", points:["Analyzed historical LULC, LST, and NDVI changes using multi-temporal satellite data to track land transformation at Pashan-Baner hill.","Produced spatial analysis maps for the official Forest Landscape Restoration Report."], media:[{src:"images/experience/earthsight-pashan-baner.jpg",caption:"Pashan-Baner hill"},{src:"images/experience/earthsight-forest-site.jpg",caption:"Forest landscape"}]},
-  { org:"India Space Lab", date:"May 2026 — June 2026", short:"SPACE SCIENCE & TECHNOLOGY", title:"Exploring systems beyond the map", left:"A technical learning entry connecting geospatial interests with space science, autonomous systems and engineering applications.", points:["Worked on PID Controller Tuning and Autonomous Navigation projects.","Contributed to a project on Heat Wave Response, Recovery, Future Challenges, and Technology Support.","Evaluated rocket fin structural and aerodynamic performance via SimScale."], media:[{src:"images/certs/india-space-lab.jpg",caption:"Summer Internship & Technical Training Program 2026",type:"certificate"}]},
-  { org:"Geo Vigyan", date:"Dec 2024 — Jan 2025", short:"MACHINE LEARNING & ENVIRONMENT", title:"Mapping environmental vulnerability", left:"A research-focused entry exploring how remote sensing and machine learning can support environmental assessment.", points:["Conducted ML-based environmental vulnerability analysis using remote sensing.","Performed spatial analysis and mapping using Google Earth Engine."], media:[{src:"images/certs/geo-vigyan-2025.jpg",caption:"Virtual Winter Internship 2024–25",type:"certificate"}]},
-  { org:"Geo Vigyan", date:"Dec 2023 — Jan 2024", short:"GIS & REMOTE SENSING", title:"Building a foundation in spatial analysis", left:"An early step in developing practical skills in GIS, remote sensing, mapping and visualisation.", points:["Applied GIS and remote sensing concepts for spatial analysis.","Worked with QGIS and ArcGIS for mapping and visualization."], media:[{src:"images/certs/geo-vigyan-2024.jpg",caption:"Virtual Summer Internship 2023",type:"certificate"}]}
+  { org:"EarthSight Foundation", date:"May 2026 — Ongoing", short:"LANDSCAPE RESTORATION", title:"Reading change across the landscape", left:"A record of multi-temporal satellite analysis and landscape restoration mapping.", points:["Analyzed historical LULC, LST, and NDVI changes using multi-temporal satellite data to track land transformation at Pashan-Baner hill.","Produced spatial analysis maps for the official Forest Landscape Restoration Report."], media:[{src:"./earthsight-pashan-baner.jpg",caption:"Pashan-Baner hill"},{src:"./earthsight-forest-site.jpg",caption:"Forest landscape"}]},
+  { org:"India Space Lab", date:"May 2026 — June 2026", short:"SPACE SCIENCE & TECHNOLOGY", title:"Exploring systems beyond the map", left:"A technical learning entry connecting geospatial interests with space science, autonomous systems and engineering applications.", points:["Worked on PID Controller Tuning and Autonomous Navigation projects.","Contributed to a project on Heat Wave Response, Recovery, Future Challenges, and Technology Support.","Evaluated rocket fin structural and aerodynamic performance via SimScale."], media:[{src:"./india-space-lab.jpg",caption:"Summer Internship & Technical Training Program 2026",type:"certificate"}]},
+  { org:"Geo Vigyan", date:"Dec 2024 — Jan 2025", short:"MACHINE LEARNING & ENVIRONMENT", title:"Mapping environmental vulnerability", left:"A research-focused entry exploring how remote sensing and machine learning can support environmental assessment.", points:["Conducted ML-based environmental vulnerability analysis using remote sensing.","Performed spatial analysis and mapping using Google Earth Engine."], media:[{src:"./geo-vigyan-2025.jpg",caption:"Virtual Winter Internship 2024–25",type:"certificate"}]},
+  { org:"Geo Vigyan", date:"Dec 2023 — Jan 2024", short:"GIS & REMOTE SENSING", title:"Building a foundation in spatial analysis", left:"An early step in developing practical skills in GIS, remote sensing, mapping and visualisation.", points:["Applied GIS and remote sensing concepts for spatial analysis.","Worked with QGIS and ArcGIS for mapping and visualization."], media:[{src:"./geo-vigyan-2024.jpg",caption:"Virtual Summer Internship 2023",type:"certificate"}]}
 ];
 const experienceIndex = $("#experienceIndex"), bookWrap = $("#experienceBookWrap");
 let activeExperience = -1;
@@ -255,7 +260,7 @@ function renderExperience(index, shouldScroll=false){
   $("#bookRole").textContent = x.date;
   $("#bookCounter").textContent = `${String(index+1).padStart(2,"0")} / 04`;
   $("#bookPoints").innerHTML = x.points.map(p=>`<li>${esc(p)}</li>`).join("");
-  $("#bookMedia").innerHTML = x.media.map(m=>`<figure class="${m.type==='certificate'?'certificate':''}" tabindex="0" role="button" aria-label="View ${esc(m.caption)}"><img src="${esc(m.src)}" alt="${esc(m.caption)}" loading="lazy"><figcaption>${esc(m.caption)}</figcaption></figure>`).join("");
+  $("#bookMedia").innerHTML = x.media.map(m=>`<figure class="${m.type==='certificate'?'certificate':''}" tabindex="0" role="button" aria-label="View ${esc(m.caption)}"><img src="${esc(m.src)}" alt="${esc(m.caption)}" loading="lazy" onerror="if(!this.dataset.fallbackTried){this.dataset.fallbackTried='1';this.src='./${esc(String(m.src).split('/').pop())}';}else{this.hidden=true;}"><figcaption>${esc(m.caption)}</figcaption></figure>`).join("");
   $("#bookPrev").disabled = index===0;
   $("#bookNext").disabled = index===experienceEntries.length-1;
   bookWrap.hidden = false;
@@ -323,7 +328,11 @@ document.body.appendChild(arcLb);
 let arcP = 0, arcK = 0, arcFrom = null;
 function arcShow() {
   const m = arcImgs(arcAll[arcP])[arcK], n = arcImgs(arcAll[arcP]).length;
-  arcLb.querySelector("img").src = m.src; arcLb.querySelector("img").alt = m.cap;
+  const lightboxImg = arcLb.querySelector("img");
+  lightboxImg.onerror = () => { lightboxImg.hidden = true; };
+  lightboxImg.hidden = false;
+  lightboxImg.src = m.src;
+  lightboxImg.alt = m.cap;
   arcLb.querySelector("figcaption").textContent = `${arcAll[arcP].title} — ${m.cap}` + (n > 1 ? `  (${arcK + 1}/${n})` : "");
   arcLb.querySelector(".lb-prev").hidden = arcLb.querySelector(".lb-next").hidden = n < 2;
 }
@@ -425,4 +434,3 @@ select(0); ready = true;
   addEventListener("resize", fit);
   setTimeout(fit, 1200); // after the reveal animation settles
 })();
-
